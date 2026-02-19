@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diet Ready — Penang's Premium Meal Prep</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Barlow Condensed', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-black text-white antialiased">
+
+  <!-- NAV -->
+  <header class="fixed top-0 inset-x-0 z-50 bg-black/90 backdrop-blur-sm border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <span class="font-display font-black text-xl tracking-[0.2em] uppercase">Diet Ready</span>
+      <nav class="hidden md:flex items-center gap-10 text-[11px] tracking-[0.2em] uppercase text-white/50">
+        <a href="#about"   class="hover:text-white transition-colors">About</a>
+        <a href="#menu"    class="hover:text-white transition-colors">Menu</a>
+        <a href="#pricing" class="hover:text-white transition-colors">Pricing</a>
+        <a href="#how"     class="hover:text-white transition-colors">How It Works</a>
+      </nav>
+      <a href="#cta" class="border border-white/60 px-5 py-2 text-[11px] tracking-[0.2em] uppercase hover:bg-white hover:text-black transition-all duration-300">
+        Order Now
+      </a>
+    </div>
+  </header>
+
+  <!-- ─── HERO ─── -->
+  <section class="min-h-screen flex flex-col justify-center pt-16 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 w-full">
+      <p class="text-[11px] tracking-[0.35em] uppercase text-white/30 mb-10 border-b border-white/10 pb-5">
+        Penang &nbsp;·&nbsp; High-Protein &nbsp;·&nbsp; Konjac-Based
+      </p>
+      <h1 class="font-display font-black uppercase leading-[0.9] text-[clamp(72px,13vw,196px)] tracking-tight">
+        Eat Clean.<br />
+        <span class="text-white/20">Train Hard.</span><br />
+        Stay Ready.
+      </h1>
+      <div class="mt-16 flex flex-col md:flex-row gap-8 md:items-end justify-between">
+        <p class="text-white/50 text-base md:text-lg max-w-sm leading-relaxed">
+          Macro-optimised, konjac-based meals engineered for performance — freshly prepared and delivered across Penang.
+        </p>
+        <a href="#cta" class="self-start bg-white text-black px-10 py-4 text-[11px] font-semibold tracking-[0.25em] uppercase hover:bg-white/85 transition-colors whitespace-nowrap">
+          Start Your Plan
+        </a>
+      </div>
+    </div>
+    <!-- Decorative vertical rules -->
+    <div class="absolute right-6 top-0 h-full w-px bg-white/[0.04] hidden lg:block"></div>
+    <div class="absolute right-24 top-0 h-full w-px bg-white/[0.04] hidden lg:block"></div>
+  </section>
+
+  <!-- ─── ABOUT ─── -->
+  <section id="about" class="py-32 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-20 items-center">
+        <div>
+          <span class="text-[11px] tracking-[0.3em] uppercase text-white/30 block mb-8">01 — About</span>
+          <h2 class="font-display font-black uppercase text-[clamp(52px,7vw,88px)] leading-[0.9] mb-10">
+            Built For<br />Results.
+          </h2>
+          <p class="text-white/50 leading-relaxed mb-5 text-sm">
+            Diet Ready was founded on a single principle: food should work as hard as you do. Every meal is engineered to hit your macros, keep you satiated, and fuel your training — without compromise.
+          </p>
+          <p class="text-white/50 leading-relaxed text-sm">
+            Using konjac as our base, our meals are naturally low in net carbohydrates and high in fibre — making them ideal for fat loss, muscle preservation, and sustainable long-term eating.
+          </p>
+        </div>
+        <!-- Stats grid -->
+        <div class="grid grid-cols-2 gap-px bg-white/10">
+          <div class="bg-black p-10 text-center">
+            <div class="font-display font-black text-6xl mb-2">40g+</div>
+            <div class="text-[10px] tracking-[0.25em] uppercase text-white/30 mt-1">Protein Per Meal</div>
+          </div>
+          <div class="bg-black p-10 text-center">
+            <div class="font-display font-black text-6xl mb-2">&lt;400</div>
+            <div class="text-[10px] tracking-[0.25em] uppercase text-white/30 mt-1">Calories</div>
+          </div>
+          <div class="bg-black p-10 text-center">
+            <div class="font-display font-black text-6xl mb-2">0</div>
+            <div class="text-[10px] tracking-[0.25em] uppercase text-white/30 mt-1">Compromise</div>
+          </div>
+          <div class="bg-black p-10 text-center">
+            <div class="font-display font-black text-6xl mb-2">100%</div>
+            <div class="text-[10px] tracking-[0.25em] uppercase text-white/30 mt-1">Fresh Daily</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── MENU ─── -->
+  <section id="menu" class="py-32 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="mb-14 flex flex-col md:flex-row md:items-end justify-between gap-6">
+        <div>
+          <span class="text-[11px] tracking-[0.3em] uppercase text-white/30 block mb-8">02 — Menu</span>
+          <h2 class="font-display font-black uppercase text-[clamp(52px,7vw,88px)] leading-[0.9]">
+            Featured<br />Meals.
+          </h2>
+        </div>
+        <p class="text-white/30 text-xs max-w-xs leading-relaxed md:text-right">
+          All meals are freshly prepared to order. Macro targets and meal selection can be customised on request.
+        </p>
+      </div>
+
+      <div class="divide-y divide-white/10 border-y border-white/10">
+
+        <!-- Meal row macro -->
+        <div class="group grid md:grid-cols-[auto_1fr_auto] gap-6 md:gap-12 py-8 px-2 hover:bg-white/[0.03] transition-colors items-center">
+          <div class="font-display font-black text-5xl text-white/[0.07] group-hover:text-white/15 transition-colors w-14 shrink-0">01</div>
+          <div>
+            <h3 class="font-display font-bold uppercase text-2xl tracking-wide mb-1">Grilled Chicken Konjac Bowl</h3>
+            <p class="text-white/35 text-sm">Chargrilled chicken thigh · Konjac rice · Steamed greens · Teriyaki glaze</p>
+          </div>
+          <div class="flex gap-10 text-center shrink-0">
+            <div><div class="font-display font-bold text-xl">44g</div><div class="text-[10px] tracking-widest uppercase text-white/25 mt-0.5">Protein</div></div>
+            <div><div class="font-display font-bold text-xl">340</div><div class="text-[10px] tracking-widest uppercase text-white/25 mt-0.5">kcal</div></div>
+          </div>
+        </div>
+
+        <div class="group grid md:grid-cols-[auto_1fr_auto] gap-6 md:gap-12 py-8 px-2 hover:bg-white/[0.03] transition-colors items-center">
+          <div class="font-display font-black text-5xl text-white/[0.07] group-hover:text-white/15 transition-colors w-14 shrink-0">02</div>
+          <div>
+            <h3 class="font-display font-bold uppercase text-2xl tracking-wide mb-1">Blackened Salmon Konjac Noodles</h3>
+            <p class="text-white/35 text-sm">Pan-seared salmon · Konjac noodles · Edamame · Miso sesame broth</p>
+          </div>
+          <div class="flex gap-10 text-center shrink-0">
+            <div><div class="font-display font-bold text-xl">42g</div><div class="text-[10px] tracking-widest uppercase text-white/25 mt-0.5">Protein</div></div>
+            <div><div class="font-display font-bold text-xl">370</div><div class="text-[10px] tracking-widest uppercase text-white/25 mt-0.5">kcal</div></div>
+          </div>
+        </div>
+
+        <div class="group grid md:grid-cols-[auto_1fr_auto] gap-6 md:gap-12 py-8 px-2 hover:bg-white/[0.03] transition-colors items-center">
+          <div class="font-display font-black text-5xl text-white/[0.07] group-hover:text-white/15 transition-colors w-14 shrink-0">03</div>
+          <div>
+            <h3 class="font-display font-bold uppercase text-2xl tracking-wide mb-1">Beef & Broccoli Stir-Fry</h3>
+            <p class="text-white/35 text-sm">Sliced lean beef · Konjac rice · Broccoli · Oyster sauce reduction</p>
+          </div>
+          <div class="flex gap-10 text-center shrink-0">
+            <div><div class="font-display font-bold text-xl">48g</div><div class="text-[10px] tracking-widest uppercase text-white/25 mt-0.5">Protein</div></div>
+            <div><div class="font-display font-bold text-xl">395</div><div class="text-[10px] tracking-widest uppercase text-white/25 mt-0.5">kcal</div></div>
+          </div>
+        </div>
+
+        <div class="group grid md:grid-cols-[auto_1fr_auto] gap-6 md:gap-12 py-8 px-2 hover:bg-white/[0.03] transition-colors items-center">
+          <div class="font-display font-black text-5xl text-white/[0.07] group-hover:text-white/15 transition-colors w-14 shrink-0">04</div>
+          <div>
+            <h3 class="font-display font-bold uppercase text-2xl tracking-wide mb-1">Thai Basil Pork Bowl</h3>
+            <p class="text-white/35 text-sm">Minced pork · Konjac rice · Thai basil · Bird's eye chilli · Soft egg</p>
+          </div>
+          <div class="flex gap-10 text-center shrink-0">
+            <div><div class="font-display font-bold text-xl">41g</div><div class="text-[10px] tracking-widest uppercase text-white/25 mt-0.5">Protein</div></div>
+            <div><div class="font-display font-bold text-xl">360</div><div class="text-[10px] tracking-widest uppercase text-white/25 mt-0.5">kcal</div></div>
+          </div>
+        </div>
+
+        <div class="group grid md:grid-cols-[auto_1fr_auto] gap-6 md:gap-12 py-8 px-2 hover:bg-white/[0.03] transition-colors items-center">
+          <div class="font-display font-black text-5xl text-white/[0.07] group-hover:text-white/15 transition-colors w-14 shrink-0">05</div>
+          <div>
+            <h3 class="font-display font-bold uppercase text-2xl tracking-wide mb-1">Herb Chicken Konjac Udon</h3>
+            <p class="text-white/35 text-sm">Poached herb chicken · Konjac udon · Bok choy · Light dashi broth</p>
+          </div>
+          <div class="flex gap-10 text-center shrink-0">
+            <div><div class="font-display font-bold text-xl">46g</div><div class="text-[10px] tracking-widest uppercase text-white/25 mt-0.5">Protein</div></div>
+            <div><div class="font-display font-bold text-xl">320</div><div class="text-[10px] tracking-widest uppercase text-white/25 mt-0.5">kcal</div></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PRICING ─── -->
+  <section id="pricing" class="py-32 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="mb-14">
+        <span class="text-[11px] tracking-[0.3em] uppercase text-white/30 block mb-8">03 — Pricing</span>
+        <h2 class="font-display font-black uppercase text-[clamp(52px,7vw,88px)] leading-[0.9]">
+          Simple.<br />Transparent.
+        </h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-px bg-white/10">
+
+        <!-- Trial -->
+        <div class="bg-black p-10 flex flex-col">
+          <div class="text-[11px] tracking-[0.3em] uppercase text-white/30 mb-8">Trial Pack</div>
+          <div class="font-display font-black text-7xl leading-none mb-2">RM59</div>
+          <div class="text-white/30 text-xs tracking-wider mb-10">3 meals · One-time</div>
+          <ul class="space-y-3 text-sm text-white/50 mb-12 flex-grow">
+            <li class="flex gap-3"><span class="text-white/20">—</span>3 meals of your choice</li>
+            <li class="flex gap-3"><span class="text-white/20">—</span>Macro breakdown included</li>
+            <li class="flex gap-3"><span class="text-white/20">—</span>Same-day delivery in Penang</li>
+          </ul>
+          <a href="#cta" class="border border-white/30 text-center py-3.5 text-[11px] tracking-[0.2em] uppercase hover:border-white hover:text-white transition-all duration-300">
+            Get Trial
+          </a>
+        </div>
+
+        <!-- Weekly — highlighted -->
+        <div class="bg-white text-black p-10 flex flex-col relative">
+          <div class="absolute top-4 right-4 bg-black text-white text-[10px] tracking-[0.2em] uppercase px-3 py-1">
+            Most Popular
+          </div>
+          <div class="text-[11px] tracking-[0.3em] uppercase text-black/40 mb-8">Weekly Plan</div>
+          <div class="font-display font-black text-7xl leading-none mb-2">RM189</div>
+          <div class="text-black/40 text-xs tracking-wider mb-10">14 meals · Per week</div>
+          <ul class="space-y-3 text-sm text-black/60 mb-12 flex-grow">
+            <li class="flex gap-3"><span class="text-black/25">—</span>14 meals (2 per day)</li>
+            <li class="flex gap-3"><span class="text-black/25">—</span>Custom macro targets</li>
+            <li class="flex gap-3"><span class="text-black/25">—</span>Daily delivery or pick-up</li>
+            <li class="flex gap-3"><span class="text-black/25">—</span>Weekly check-in support</li>
+          </ul>
+          <a href="#cta" class="bg-black text-white text-center py-3.5 text-[11px] tracking-[0.2em] uppercase hover:bg-black/80 transition-colors">
+            Get Weekly
+          </a>
+        </div>
+
+        <!-- Monthly -->
+        <div class="bg-black p-10 flex flex-col">
+          <div class="text-[11px] tracking-[0.3em] uppercase text-white/30 mb-8">Monthly Plan</div>
+          <div class="font-display font-black text-7xl leading-none mb-2">RM649</div>
+          <div class="text-white/30 text-xs tracking-wider mb-10">60 meals · Per month</div>
+          <ul class="space-y-3 text-sm text-white/50 mb-12 flex-grow">
+            <li class="flex gap-3"><span class="text-white/20">—</span>60 meals (2 per day)</li>
+            <li class="flex gap-3"><span class="text-white/20">—</span>Full macro personalisation</li>
+            <li class="flex gap-3"><span class="text-white/20">—</span>Priority delivery</li>
+            <li class="flex gap-3"><span class="text-white/20">—</span>Bi-weekly progress review</li>
+            <li class="flex gap-3"><span class="text-white/20">—</span>Free meal swap anytime</li>
+          </ul>
+          <a href="#cta" class="border border-white/30 text-center py-3.5 text-[11px] tracking-[0.2em] uppercase hover:border-white hover:text-white transition-all duration-300">
+            Get Monthly
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── HOW IT WORKS ─── -->
+  <section id="how" class="py-32 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="mb-14">
+        <span class="text-[11px] tracking-[0.3em] uppercase text-white/30 block mb-8">04 — Process</span>
+        <h2 class="font-display font-black uppercase text-[clamp(52px,7vw,88px)] leading-[0.9]">
+          How It<br />Works.
+        </h2>
+      </div>
+
+      <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-px bg-white/10">
+
+        <div class="bg-black p-10">
+          <div class="font-display font-black text-6xl text-white/[0.07] mb-8 leading-none">01</div>
+          <h3 class="font-display font-bold uppercase text-xl tracking-wide mb-4">Choose Your Plan</h3>
+          <p class="text-white/40 text-sm leading-relaxed">Select from Trial, Weekly, or Monthly. Reach out via WhatsApp to get started.</p>
+        </div>
+
+        <div class="bg-black p-10">
+          <div class="font-display font-black text-6xl text-white/[0.07] mb-8 leading-none">02</div>
+          <h3 class="font-display font-bold uppercase text-xl tracking-wide mb-4">Set Your Macros</h3>
+          <p class="text-white/40 text-sm leading-relaxed">Tell us your goal — fat loss, muscle gain, or maintenance. We dial in your targets.</p>
+        </div>
+
+        <div class="bg-black p-10">
+          <div class="font-display font-black text-6xl text-white/[0.07] mb-8 leading-none">03</div>
+          <h3 class="font-display font-bold uppercase text-xl tracking-wide mb-4">We Prep & Deliver</h3>
+          <p class="text-white/40 text-sm leading-relaxed">Meals are freshly prepared and delivered daily across Penang. Pick-up available.</p>
+        </div>
+
+        <div class="bg-black p-10">
+          <div class="font-display font-black text-6xl text-white/[0.07] mb-8 leading-none">04</div>
+          <h3 class="font-display font-bold uppercase text-xl tracking-wide mb-4">Eat & Perform</h3>
+          <p class="text-white/40 text-sm leading-relaxed">Show up to every session fuelled. Hit your goals. Repeat.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CTA ─── -->
+  <section id="cta" class="py-48 border-t border-white/10 relative overflow-hidden">
+    <!-- Background watermark -->
+    <div class="absolute inset-0 flex items-center justify-center pointer-events-none select-none" aria-hidden="true">
+      <span class="font-display font-black text-[30vw] leading-none text-white/[0.03]">DR</span>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-6 text-center relative z-10">
+      <span class="text-[11px] tracking-[0.3em] uppercase text-white/30 block mb-8">05 — Get Started</span>
+      <h2 class="font-display font-black uppercase leading-[0.9] text-[clamp(80px,16vw,200px)] mb-8">
+        Ready?
+      </h2>
+      <p class="text-white/40 text-base mb-14 max-w-sm mx-auto leading-relaxed">
+        Message us on WhatsApp to place your order, ask questions, or get a custom plan built around your goals.
+      </p>
+      <a
+        href="https://wa.me/60175832511?text=Hi%20Diet%20Ready!%20I%27m%20interested%20in%20your%20meal%20plans."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-3 bg-white text-black px-12 py-5 text-[11px] font-semibold tracking-[0.25em] uppercase hover:bg-white/85 transition-colors"
+      >
+        <!-- WhatsApp icon -->
+        <svg class="w-5 h-5 shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        Chat on WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="border-t border-white/10 py-8">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+      <span class="font-display font-black tracking-[0.2em] uppercase text-lg">Diet Ready</span>
+      <span class="text-white/25 text-xs tracking-widest text-center">Penang, Malaysia &nbsp;·&nbsp; © 2026 Diet Ready</span>
+      <nav class="flex gap-8 text-[11px] tracking-[0.2em] uppercase text-white/30">
+        <a href="#menu"    class="hover:text-white transition-colors">Menu</a>
+        <a href="#pricing" class="hover:text-white transition-colors">Pricing</a>
+        <a href="#cta"     class="hover:text-white transition-colors">Order</a>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>
