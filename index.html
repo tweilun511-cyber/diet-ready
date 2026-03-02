@@ -120,49 +120,87 @@
   </section>
 
   <!-- ─── WHAT IS KONJAC ─── -->
-  <section id="konjac" class="py-32 border-t border-gold/20">
-    <div class="max-w-7xl mx-auto px-6">
+  <section id="konjac" class="relative py-40 border-t border-gold/20 overflow-hidden">
+
+    <!-- Background image -->
+    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('assets/konjac-bg.png');"></div>
+
+    <!-- Dark overlay -->
+    <div class="absolute inset-0 bg-black/70"></div>
+
+    <div class="relative max-w-7xl mx-auto px-6">
+
       <div class="grid md:grid-cols-2 gap-20 items-start">
+
+        <!-- Left copy -->
         <div>
-          <span class="text-[11px] tracking-[0.3em] uppercase text-white/30 block mb-8">02 — The Ingredient</span>
-          <h2 class="font-display font-black uppercase text-[clamp(52px,7vw,88px)] leading-[0.9] mb-10">
-            What Is<br />Konjac?
+          <span class="text-[11px] tracking-[0.35em] uppercase text-white/30 block mb-8">
+            02 — The Ingredient
+          </span>
+
+          <h2 class="font-display font-black uppercase text-[clamp(52px,7vw,88px)] leading-[0.9] mb-12">
+            What Makes<br />
+            <span class="text-white/20">Konjac Different</span>
           </h2>
-          <p class="text-white/50 leading-relaxed mb-5 text-sm">
-            Konjac — also known as konnyaku, shirataki, or miracle noodles — is a plant-based fibre that has been a staple of Japanese cuisine for centuries. It's the foundation of every Diet Ready meal.
+
+          <p class="text-white/60 leading-relaxed mb-6 max-w-lg">
+            A traditional Japanese ingredient used for centuries.
+            Naturally low in calories. Naturally high in volume.
           </p>
-          <p class="text-white/50 leading-relaxed mb-5 text-sm">
-            Made from glucomannan, konjac absorbs water and expands in your stomach — giving you a high-volume, filling meal without loading you up with digestible carbohydrates.
-          </p>
-          <p class="text-white/50 leading-relaxed text-sm">
-            The result: a full plate that looks and feels like a proper meal, at a fraction of the caloric cost of rice, pasta, or regular noodles.
+
+          <p class="text-white/60 leading-relaxed max-w-lg">
+            Konjac expands in the stomach — creating a full, satisfying plate
+            without the caloric load of rice, pasta, or regular noodles.
           </p>
         </div>
 
-        <!-- Konjac property cards -->
-        <div class="grid grid-cols-2 gap-px bg-gold/20">
-          <div class="bg-deepgreen p-8">
-            <div class="font-display font-black text-5xl mb-3">~5 kcal</div>
-            <div class="text-[10px] tracking-[0.25em] uppercase text-white/30 mt-1">Per 100g Konjac</div>
-            <p class="text-white/25 text-xs mt-4 leading-relaxed">Very low / near-zero calories. Bulk your plate without blowing your budget.</p>
+        <!-- Right stat blocks -->
+        <div class="grid grid-cols-2 gap-8">
+
+          <div class="bg-black/40 border border-gold/20 p-8">
+            <div class="font-display text-5xl mb-4">~5</div>
+            <div class="text-[10px] tracking-[0.25em] uppercase text-white/40 mb-2">
+              Kcal per 100g
+            </div>
+            <p class="text-white/50 text-sm">
+              Extremely low energy density. Bigger plates, minimal calories.
+            </p>
           </div>
-          <div class="bg-deepgreen p-8">
-            <div class="font-display font-black text-5xl mb-3">~0g</div>
-            <div class="text-[10px] tracking-[0.25em] uppercase text-white/30 mt-1">Digestible Carbs</div>
-            <p class="text-white/25 text-xs mt-4 leading-relaxed">Near-zero net carbs per serving. Compatible with keto, low-carb, and calorie-deficit goals.</p>
+
+          <div class="bg-black/40 border border-gold/20 p-8">
+            <div class="font-display text-5xl mb-4">~0g</div>
+            <div class="text-[10px] tracking-[0.25em] uppercase text-white/40 mb-2">
+              Digestible Carbs
+            </div>
+            <p class="text-white/50 text-sm">
+              Near-zero net carbs. Compatible with keto and deficit phases.
+            </p>
           </div>
-          <div class="bg-deepgreen p-8">
-            <div class="font-display font-black text-5xl mb-3">High</div>
-            <div class="text-[10px] tracking-[0.25em] uppercase text-white/30 mt-1">Fibre Content</div>
-            <p class="text-white/25 text-xs mt-4 leading-relaxed">Glucomannan slows digestion and sustains fullness for hours after eating.</p>
+
+          <div class="bg-black/40 border border-gold/20 p-8">
+            <div class="font-display text-5xl mb-4">High</div>
+            <div class="text-[10px] tracking-[0.25em] uppercase text-white/40 mb-2">
+              Fibre Content
+            </div>
+            <p class="text-white/50 text-sm">
+              Glucomannan slows digestion and sustains fullness.
+            </p>
           </div>
-          <div class="bg-deepgreen p-8">
-            <div class="font-display font-black text-5xl mb-3">High</div>
-            <div class="text-[10px] tracking-[0.25em] uppercase text-white/30 mt-1">Meal Volume</div>
-            <p class="text-white/25 text-xs mt-4 leading-relaxed">More food on your plate. Same calorie target. Easier to adhere to, every single day.</p>
+
+          <div class="bg-black/40 border border-gold/20 p-8">
+            <div class="font-display text-5xl mb-4">More</div>
+            <div class="text-[10px] tracking-[0.25em] uppercase text-white/40 mb-2">
+              Meal Volume
+            </div>
+            <p class="text-white/50 text-sm">
+              More food on your plate. Same calorie target. Easier adherence.
+            </p>
           </div>
+
         </div>
+
       </div>
+
     </div>
   </section>
 
